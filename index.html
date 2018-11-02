@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulaires 2</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="formulaires2.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Open+Sans:300,400,600,700,800" rel="stylesheet">
+</head>
+
+<body>
+	<section class="container">
+		<form>
+			
+			<h3>Vos informations</h3>
+
+			<fieldset>
+				<p>
+					<span class="smallTitle">Vous êtes :</span><br>
+
+					<input type="radio" name="genre" value="male" id="male">
+					<label for="male">Homme</label>
+
+					<input type="radio" name="genre" value="female" id="female">
+					<label for="female">Femme</label>
+
+					<input type="radio" name="genre" value="other" id="other">
+					<label for="other">Autre</label>
+				</p>
+			</fieldset>
+
+			<fieldset>
+				<p class="requiredInput">
+					<label for="firstName"> Prénom :</label>
+					<input type="text" name="firstName" id="firstName" placeholder="Votre prénom..." required>
+				</p>
+				<p class="requiredInput">
+					<label for="lastName"> Nom :</label>
+					<input type="text" name="lastName" id="lastName" placeholder="Votre nom..." required>
+				</p>
+				<p class="requiredInput">
+					<label for="email"> Email :</label>
+					<input type="email" name="email" id="email" placeholder="Ex: adressemail@mail.com" required>
+				</p>
+
+				<p class="requiredInput">
+					<label for="password">Mot de passe :</label>
+					<input type="password" name="password" id="password" placeholder="6 caractères min" required>
+				</p>
+				<p class="requiredInput">
+					<label for="passwordConfirm">Confirmer le mot de passe :</label>
+					<input type="password" name="passwordConfirm" id="passwordConfirm" required>
+				</p>
+			</fieldset>
+
+			<fieldset>
+				<p class="requiredInput">
+					<label for="birthday">Né(e) le :</label>
+					<input type="date" name="birthday" id="birthday" required>
+				</p>
+
+				<p class="requiredInput">
+					<label for="country">Quelle est votre nationalité ?</label>
+					<select name="country" id="country" required>
+						<option value="sélectionnez une option" disabled selected>Sélectionnez une option</option>
+
+						<optgroup label="Europe">
+							<option value="germany">Allemagne</option>
+							<option value="england">Angleterre</option>
+							<option value="spain">Espagne</option>
+							<option value="france">France</option>
+							<option value="italy">Italie</option>
+							<option value="swiss">Suisse</option>
+						</optgroup>
+
+						<optgroup label="Amérique">
+							<option value="brasil">Brésil</option>
+							<option value="canada">Canada</option>
+							<option value="usa">Etats-unis</option>
+							<option value="mexico">Mexique</option>
+						</optgroup>
+
+						<optgroup label="Asie">
+							<option value="china">Chine</option>
+							<option value="india">Inde</option>
+							<option value="japan">Japon</option>
+							<option value="thailand">Thaïlande</option>
+							<option value="vietnam">Vietnam</option>
+						</optgroup>
+					</select>
+				</p>
+			</fieldset>
+
+			<fieldset>
+				<p>
+					<span class="smallTitle">S'abonner à la newsletter</span><br>
+
+					<input type="checkbox" name="newsletter" id="newsletter" checked>
+					<label for="newsletter">Je souhaite m'abonner à la newsletter et recevoir les dernières informations.</label><br>
+
+					<input type="checkbox" name="newsletterPartners" id="newsletterPartners">
+					<label for="newsletterPartners">Je souhaite recevoir les offres des sites partenaires.</label><br>
+				</p>
+			</fieldset>
+
+			<fieldset>
+				<label for="comment">Commentaire :</label><br>
+				<textarea id="comment" name="comment" rows="10"></textarea>
+			</fieldset>
+
+			<fieldset id="submitButton">
+				<button>ENVOYER</button>
+			</fieldset>
+		</form>
+	</section>
+
+</body>
+</html>
