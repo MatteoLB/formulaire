@@ -1,0 +1,198 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, /* ol, ul, li, */
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary, time, mark, audio, video
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	height: 100%;
+	width: 100%;
+	font-size: 1.1rem;
+	font-family: 'Montserrat', sans-serif; /* 'Open Sans' */
+	font-weight: 400;
+	background-image: url(petanque.jpg);
+	background-size: cover;
+}
+
+::-moz-selection 
+{
+	color: white;
+	background: #610000;
+}
+
+::selection
+{
+	color: white;
+	background: #610000;
+}
+
+p
+{
+	text-align: justify;
+	margin-bottom: 15px;
+
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	font-family: 'Open Sans', sans-serif;
+	color: black;
+}
+
+h1, h2
+{
+	font-weight: 700;
+	margin: 20px 0px;
+}
+
+h3, h4, h5, h6
+{
+	font-weight: 600;
+	margin: 15px 0px;
+}
+
+h1
+{
+	font-size: 3rem;
+}
+h2
+{
+	font-size: 2.5rem;
+}
+h3
+{
+	font-size: 2rem;
+}
+h4
+{
+	font-size: 1.7rem;
+}
+h5
+{
+	font-size: 1.5rem;
+}
+h6
+{
+	font-size: 1.3rem;
+}
+
+a, a:visited
+{
+	color: black;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+a:hover
+{
+	color: #686868;
+}
+
+.container
+{
+	width: 1170px;
+	margin: 50px auto;
+}
+
+.requiredInput::after
+{
+	content: "*";
+	position: relative;
+	top: 5px;
+	left: 10px;
+	color: red;
+}
+
+textarea
+{
+	resize: none;
+}
+
+fieldset
+{
+	margin: 10px 0px;
+	padding: 10px 5px;
+	border: none;
+	border-bottom: 1px solid grey;
+}
+fieldset:last-of-type
+{
+	border-bottom: none;
+}
+
+form
+{
+	margin: auto;
+	width: 80%;
+	box-shadow: 0px 0px 10px black;
+	border-radius: 10px;
+	padding: 20px;
+	line-height: 2rem;
+	background-color: rgba(255,255,255,0.7);
+}
+
+form h3
+{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+form label
+{
+	font-weight: 500;
+}
+
+.smallTitle
+{
+	font-weight: 600;
+	font-size: 1.2rem;
+}
+
+textarea
+{
+	width: 99%;
+}
+
+.requiredInput
+{
+	display: grid;
+	grid-template-columns: 5fr 12fr 20px;
+	grid-template-rows: 1fr;
+}
+
+input, textarea
+{
+	border-radius: 10px;
+	border: 1px solid grey;
+	padding: 0px 5px;
+}
+
+#birthday, #country
+{
+	width: fit-content;
+}
+
+#submitButton
+{
+	text-align: center;
+	margin-bottom: 0;
+}
+#submitButton button
+{
+	border: none;
+	padding: 15px 45px;
+	font-size: 1.3rem;
+	border-radius: 20px;
+	background-color: #424242;
+	font-weight: bold;
+	color: white;
+	box-shadow: 0px 0px 8px silver;
+	cursor: pointer;
+}
